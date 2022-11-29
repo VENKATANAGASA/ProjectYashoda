@@ -1,2 +1,0 @@
-# ProjectYashoda
-Hospital project
