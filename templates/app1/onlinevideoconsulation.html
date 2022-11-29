@@ -1,0 +1,35 @@
+{% extends "app1/home.html" %}
+
+{% block body_block %}
+
+<center>
+
+<h2> EMPLOYEE DATA</h2>
+
+
+<table border=4px;>
+<tr>
+<thead>
+<th>Patient_Name</th>
+<th>Patient_Cause</th>
+<th>Patient-Doctor</th>
+<th>Patient_Date</th>
+<th>Patient_Time</th>
+</thead>
+{% for i in a %}
+</tr>
+<tr>
+<tbody>
+<td>{{i.Patient_Name}}</td>
+<td>{{i.Patient_Cause}}</td>
+<td>{{i.Patient_Doctor}}</td>
+<td>{{i.Date_Time.calendar}}</td>
+<td>{{i.Patient_Time}}</td>
+</tbody>
+</tr>
+{% endfor %}
+</table>
+
+</center>
+
+{% endblock %}

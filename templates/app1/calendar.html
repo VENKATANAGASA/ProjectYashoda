@@ -1,0 +1,25 @@
+{% extends "app1/home.html" %}
+
+{% block body_block %}
+
+<center>
+
+
+<title>dd-mm-yyy format</title>
+
+<center>
+	
+<form method="POST">
+
+{% csrf_token %}
+
+{{f.as_p}}
+
+
+<button>  SUBMIT   </button>
+
+</form>
+
+</center>
+
+{% endblock %}

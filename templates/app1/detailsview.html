@@ -1,0 +1,15 @@
+{% extends "app1/home.html" %}
+
+{% block body_block %}
+   
+<div class="container">
+   <form method="POST">
+      {{f.as_p}}
+      {%csrf_token%}
+      
+      <button>Submit</button>
+      
+   </form>
+
+{% endblock %}
+
